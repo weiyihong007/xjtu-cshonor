@@ -1,0 +1,87 @@
+site_url: https://google.com
+site_name: XJTU计学组4.0
+nav:
+  - 主页: index.md
+  - 课内资料: 
+    - 概述: 课内资料/overview.md
+    - 大一: 
+      - 概述: 课内资料/大一/overview.md
+      - 工数上: 课内资料/大一/工数上.md
+      - 工数下: 课内资料/大一/工数下.md
+      - 线性代数与解析几何: 课内资料/大一/线性代数与解析几何.md
+      - 计算机程序设计: 课内资料/大一/计算机程序设计程设.md
+      - 中国近代史纲要: 课内资料/大一/中国近代史纲要.md
+      - 思想道德与法治: 课内资料/大一/思想道德与法治.md
+      - 数据结构与算法A(拔尖班): 课内资料/大一/数据结构与算法.md
+      - 离散数学A: 课内资料/大一/离散数学A.md
+      - 计算概论: 课内资料/大一/计算概论.md
+      - 国防教育: 课内资料/大一/国防教育.md
+      - 大学物理1: 课内资料/大一/大学物理1.md
+      - 大学物理实验1: 课内资料/大一/大学物理实验1.md
+      - 英语:
+        - 学术英语素养: 课内资料/大一/英语学术英语素养.md
+        - 国际交流演讲与辩论: 课内资料/大一/英语国际交流演讲与辩论.md
+        - 托福强化: 课内资料/大一/英语/托福强化.md
+        - 英语学术写作与展示: 课内资料/大一/英语/英语学术写作与展示.md
+        - 日语基础: 课内资料/大一/英语日语基础.md
+      - 军训: 课内资料/大一/军训.md
+    - 大二: 
+      - 概述: 课内资料/大二/overview.md
+    - 大三: 
+      - 概述: 课内资料/大三/overview.md
+    - 大四: 
+      - 概述: 课内资料/大四/overview.md
+    - 选修: 课内资料/选修.md
+    - 体育: 课内资料/体育.md
+  - 研讨班课件: 研讨班/机器学习研讨班/overview.md
+  - 常见问题: question.md
+  - 出国交流: 
+    - 伯克利访问项目: 出国交流/伯克利访问项目/overview.md
+    - 新国立暑期项目: 出国交流/新国立暑期项目/overview.md
+theme: 
+  name: material
+  language: 'zh'
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+markdown_extensions:
+  - toc:
+      toc_depth: 3
+  - tables
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.keys
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist
+
+plugins:
+  - social
