@@ -1,0 +1,8 @@
+- [1](./t10k-images-idx3-ubyte)
+- [2](./t10k-images-idx3-ubyte.gz)
+- [3](./t10k-labels-idx1-ubyte)
+- [4](./t10k-labels-idx1-ubyte.gz)
+- [5](./train-images-idx3-ubyte)
+- [6](./train-images-idx3-ubyte.gz)
+- [7](./train-labels-idx1-ubyte)
+- [8](./train-labels-idx1-ubyte.gz)

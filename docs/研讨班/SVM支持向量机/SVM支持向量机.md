@@ -1,0 +1,2 @@
+- [支持向量机课件](./ch4.ipynb)
+- [支持向量机python代码](./Support%20Vector%20Machine.py)
