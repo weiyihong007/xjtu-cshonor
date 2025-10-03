@@ -19,11 +19,11 @@ nav:
       - 大学物理1: 课内资料/大一/大学物理1.md
       - 大学物理实验1: 课内资料/大一/大学物理实验1.md
       - 英语:
-        - 学术英语素养: 课内资料/大一/英语学术英语素养.md
-        - 国际交流演讲与辩论: 课内资料/大一/英语国际交流演讲与辩论.md
+        - 学术英语素养: 课内资料/大一/英语/学术英语素养.md
+        - 国际交流演讲与辩论: 课内资料/大一/英语/国际交流演讲与辩论.md
         - 托福强化: 课内资料/大一/英语/托福强化.md
         - 英语学术写作与展示: 课内资料/大一/英语/英语学术写作与展示.md
-        - 日语基础: 课内资料/大一/英语日语基础.md
+        - 日语基础: 课内资料/大一/英语/日语基础.md
       - 军训: 课内资料/大一/军训.md
     - 大二: 
       - 概述: 课内资料/大二/overview.md
@@ -80,6 +80,9 @@ markdown_extensions:
       toc_depth: 3
   - tables
   - footnotes
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - admonition
   - pymdownx.details
   - pymdownx.arithmatex:
