@@ -64,6 +64,16 @@ nav:
   - 出国交流: 
     - 伯克利访问项目: 出国交流/伯克利访问项目/overview.md
     - 新国立暑期项目: 出国交流/新国立暑期项目/overview.md
+  - 科研: 科研/content.md
+  - 竞赛: 竞赛/index.md
+  - 竞赛介绍:
+      - 数学建模: 竞赛/math-modeling.md
+      - 算法竞赛: 竞赛/suanfa.md
+      - 大学生数学竞赛: 竞赛/CMC.md
+      - 物理竞赛: 竞赛/CUPT.md
+      - 机器人竞赛: 竞赛/robot.md
+      - 创新创业类竞赛: 竞赛/innovation.md
+      - 节能减排竞赛: 竞赛/energy.md
 theme: 
   name: material
   language: 'zh'
