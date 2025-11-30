@@ -1,0 +1,14 @@
+site_name: 竞赛
+theme:
+  name: material
+
+nav:
+  - 简介: index.md
+  - 竞赛介绍:
+      - 数学建模: math-modeling.md
+      - 算法竞赛: suanfa.md
+      - 大学生数学竞赛: CMC.md
+      - 物理竞赛: CUPT.md
+      - 机器人竞赛: robot.md
+      - 创新创业类竞赛: innovation.md
+      - 节能减排竞赛: energy.md

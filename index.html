@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenCSHonor | 计试一站式学术资源共享</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #fdfdfd;       /* 极淡的纸张白 */
+      --text-main: #1e293b;      /* 深岩灰 */
+      --text-sub: #64748b;       /* 柔和灰 */
+      --accent-color: #0f172a;   /* 接近黑色的蓝，严谨 */
+      --border-color: #e2e8f0;
+      --card-bg: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: "Inter", -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 960px; /* 限制最大宽度，保持阅读舒适度 */
+      text-align: center;
+    }
+
+    /* 顶部 Logo 区域 */
+    .brand-area {
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .brand-logo {
+      /* 这里控制你的主Logo大小 */
+      width: 100%; 
+      max-width: 600px; 
+      height: auto;
+      filter: contrast(1.1); /* 稍微增加对比度 */
+    }
+
+    /* 学术风格的标题与副标题 */
+    .hero-text {
+      margin-bottom: 4rem;
+      position: relative;
+    }
+
+    .hero-text::after {
+      /* 装饰性短横线 */
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: var(--accent-color);
+      margin: 1.5rem auto 0;
+      opacity: 0.8;
+    }
+
+    .subtitle {
+      font-family: "Merriweather", serif; /* 衬线体，更具学术感 */
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.4;
+      letter-spacing: -0.02em;
+    }
+
+    .description {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: var(--text-sub);
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      text-transform: uppercase; /* 大写英文会有索引感，中文则显得整齐 */
+      font-size: 0.85rem;
+    }
+
+    /* 静态网格 Logo 展示区 (替代原本的滚动) */
+    .partners-section {
+      margin-bottom: 4rem;
+    }
+    
+    .partners-label {
+      font-size: 0.75rem;
+      color: #94a3b8;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .logo-grid {
+      display: grid;
+      /* 自适应网格：每列最小120px */
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); 
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      border-radius: 4px; /* 较小的圆角，更硬朗 */
+      transition: all 0.3s ease;
+    }
+
+    .logo-card:hover {
+      border-color: #cbd5e1;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(148, 163, 184, 0.1);
+    }
+
+    .logo-card img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      filter: grayscale(100%); /* 默认黑白，鼠标悬浮变色，非常学术的做法 */
+      opacity: 0.7;
+      transition: all 0.3s ease;
+    }
+
+    .logo-card:hover img {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+
+    /* 按钮设计 */
+    .action-area {
+      margin-top: 1rem;
+    }
+
+    .enter-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 48px;
+      font-size: 1rem;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      color: #fff;
+      background-color: var(--accent-color);
+      border: 1px solid var(--accent-color);
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      letter-spacing: 0.03em;
+    }
+
+    .enter-btn:hover {
+      background-color: #334155;
+      border-color: #334155;
+      transform: translateY(-1px);
+    }
+
+    .enter-btn:active {
+      transform: translateY(0);
+    }
+
+    /* 极简页脚 */
+    footer {
+      margin-top: 4rem;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 1.5rem;
+      width: 100%;
+      color: #cbd5e1;
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 600px) {
+      .logo-grid {
+        grid-template-columns: repeat(2, 1fr); /* 手机端强制两列 */
+        gap: 1rem;
+      }
+      .subtitle {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    
+    <header class="brand-area">
+      <img src="assets/mylogo.png" alt="OpenCSHonor Logo" class="brand-logo" onerror="this.style.display='none'; document.getElementById('backup-title').style.display='block';">
+      <h1 id="backup-title" style="display:none; font-family:'Merriweather',serif; font-size:2.5rem; color:#0f172a;">OpenCSHonor</h1>
+    </header>
+
+    <div class="hero-text">
+      <h2 class="subtitle">计试一站式学术资源共享项目</h2>
+      <p class="description">由计学组开发并长期维护</p>
+    </div>
+
+    <div class="partners-section">
+      <div class="partners-label">Supported By</div>
+      <div class="logo-grid" id="logo-grid">
+        </div>
+    </div>
+
+    <div class="action-area">
+      <a href="site/index.html" class="enter-btn" id="enter-btn">立刻进入 &rarr;</a>
+    </div>
+
+    <footer>
+      &copy; OpenCSHonor Project. All Rights Reserved.
+    </footer>
+  </div>
+
+  <script>
+    // 配置区域
+    const LOGO_COUNT = 6;
+    const TARGET_PAGE = "main.html";
+
+    // 渲染网格函数
+    function renderGrid() {
+      const grid = document.getElementById('logo-grid');
+      
+      // 简单的循环生成 1 到 6 的图片
+      for (let i = 1; i <= LOGO_COUNT; i++) {
+        const card = document.createElement('div');
+        card.className = 'logo-card';
+        
+        const img = document.createElement('img');
+        img.src = `assets/${i}.png`;
+        img.alt = `Partner Logo ${i}`;
+        
+        // 如果图片加载失败，移除该卡片，保持布局整洁
+        img.onerror = () => {
+          card.remove(); 
+        };
+        
+        card.appendChild(img);
+        grid.appendChild(card);
+      }
+    }
+
+    // 初始化
+    renderGrid();
+
+    // 按钮跳转
+    document.getElementById("enter-btn").addEventListener("click", () => {
+      window.location.href = TARGET_PAGE;
+    });
+  </script>
+
+</body>
+</html>
