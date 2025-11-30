@@ -1,5 +1,5 @@
 
-![](assets/mylogo.png){ align=center }
+![](assets/mylogo.png)
 
 # OpenCSHonor:计试一站式学术资源共享项目
 **OpenCSHonor**是一个学术资源共享项目,旨在精心组织计试的所有资料以便于在线访问,本项目将由计学组网站组同学**长期维护**。
