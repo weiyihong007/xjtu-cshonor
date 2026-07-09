@@ -90,7 +90,7 @@
 
   
 
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="../../.." title="OpenCSHonor" class="md-header__button md-logo" aria-label="OpenCSHonor" data-md-component="logo">
       
@@ -150,16 +150,263 @@
     
     
     
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
     
   </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  课内资料
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E7%A7%91%E7%A0%94/content/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  科研
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E7%A0%94%E8%AE%A8%E7%8F%AD/overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  研讨班课件
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E5%87%BA%E5%9B%BD%E4%BA%A4%E6%B5%81/%E4%BC%AF%E5%85%8B%E5%88%A9%E8%AE%BF%E9%97%AE%E9%A1%B9%E7%9B%AE/overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  出国交流
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../%E5%8D%87%E5%AD%A6/overview/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  升学
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E7%AB%9E%E8%B5%9B/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  竞赛
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E6%9D%82%E9%A1%B9/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  杂项
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  关于我们
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
   
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -173,8 +420,10 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="OpenCSHonor" class="md-nav__button md-logo" aria-label="OpenCSHonor" data-md-component="logo">
       
@@ -224,17 +473,41 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -301,17 +574,57 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
             
   
   
@@ -861,7 +1174,24 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -1092,17 +1422,55 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
             
   
   
@@ -1539,17 +1907,51 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
         
           
-          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
             
   
   
@@ -1930,17 +2332,35 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
             
   
   
@@ -2160,7 +2580,18 @@
   
     
     
+      
+        
+      
+        
+      
     
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -2270,7 +2701,26 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -2492,7 +2942,18 @@
   
     
     
+      
+        
+      
+        
+      
     
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -2629,7 +3090,32 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -2639,8 +3125,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../%E7%AB%9E%E8%B5%9B/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2654,8 +3141,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
@@ -2668,32 +3161,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../%E7%AB%9E%E8%B5%9B/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    概述
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -2907,7 +3374,28 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -2917,8 +3405,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../%E6%9D%82%E9%A1%B9/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2932,8 +3421,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
@@ -2946,32 +3441,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../%E6%9D%82%E9%A1%B9/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    概述
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -3305,13 +3774,13 @@
 <details class="note">
 <summary>📁 课程课件 (PPTX)</summary>
 <p><a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS1-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.pptx">下载 DS1-基础知识.pptx :octicons-download-16:</a>
-<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS2%20%E7%BA%BF%E6%80%A7%E8%A1%A8%20%284%29.pptx">下载 DS2-线性表.pptx :octicons-download-16:</a>
-<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS3%20%E5%8F%97%E9%99%90%E7%BA%BF%E6%80%A7%E8%A1%A8%20%283%29.pptx">下载 DS3-受限线性表.pptx :octicons-download-16:</a>
-<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS4%20%E6%89%A9%E5%B1%95%E7%BA%BF%E6%80%A7%E8%A1%A8%20%281%29.pptx">下载 DS4-扩展线性表.pptx :octicons-download-16:</a>
-<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS5%20%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91%20%281%29.pptx">下载 DS5-树和二叉树.pptx :octicons-download-16:</a>
-<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS6%20%E5%9B%BE%281%29.pptx">下载 DS6-图.pptx :octicons-download-16:</a>
-<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS7%20%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%20%281%29.pptx">下载 DS7-排序算法.pptx :octicons-download-16:</a>
-<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS8%20%E6%9F%A5%E6%89%BE%E7%AE%97%E6%B3%95%282%29.pptx">下载 DS8-查找算法.pptx :octicons-download-16:</a></p>
+<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS2%20%E7%BA%BF%E6%80%A7%E8%A1%A8%20(4).pptx">下载 DS2-线性表.pptx :octicons-download-16:</a>
+<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS3%20%E5%8F%97%E9%99%90%E7%BA%BF%E6%80%A7%E8%A1%A8%20(3).pptx">下载 DS3-受限线性表.pptx :octicons-download-16:</a>
+<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS4%20%E6%89%A9%E5%B1%95%E7%BA%BF%E6%80%A7%E8%A1%A8%20(1).pptx">下载 DS4-扩展线性表.pptx :octicons-download-16:</a>
+<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS5%20%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91%20(1).pptx">下载 DS5-树和二叉树.pptx :octicons-download-16:</a>
+<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS6%20%E5%9B%BE(1).pptx">下载 DS6-图.pptx :octicons-download-16:</a>
+<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS7%20%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%20(1).pptx">下载 DS7-排序算法.pptx :octicons-download-16:</a>
+<a class="md-button" href="https://weiyihong007.github.io/xjtu-cshonor-assets/utils/xjtu-cshonor-utils/%E8%AF%BE%E5%86%85%E8%B5%84%E6%96%99/%E5%A4%A7%E4%B8%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DS8%20%E6%9F%A5%E6%89%BE%E7%AE%97%E6%B3%95(2).pptx">下载 DS8-查找算法.pptx :octicons-download-16:</a></p>
 </details>
 <h3 id="2">2. 推荐教材</h3>
 <p>教材提供了比课件更严谨的定义和更丰富的细节，是深入理解概念的重要补充。</p>
@@ -3364,9 +3833,55 @@
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 思想道德与法治">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                思想道德与法治
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6A/" class="md-footer__link md-footer__link--next" aria-label="下一页: 离散数学A">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                离散数学A
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -3393,7 +3908,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.footer", "navigation.top", "toc.follow", "search.highlight", "search.suggest", "search.share", "content.code.annotate", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
